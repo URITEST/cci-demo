@@ -62,7 +62,7 @@ jobs:
           command: |
             docker build -t quay.io/uritest/cci-demo-docker:Staging .
             docker login -u 'URITEST' -p '1!LabStudy' quay.io
-            docker run quay.io/uritest/cci-demo-docker:Staging
+            docker run quay.io/uritest/cci-demo-docker
             docker push quay.io/uritest/cci-demo-docker:Staging
 
       - store_artifacts:
